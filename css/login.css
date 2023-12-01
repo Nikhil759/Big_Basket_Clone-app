@@ -1,0 +1,114 @@
+:root {
+  --bodyblack: #000000;
+  --bodywhite: #ffffff;
+  --offwhite: #ddd;
+  --themegreen: #339e1bfa;
+  --bodygraydark: #5a5959;
+  --bodygraylight: #708090;
+  --btn-hover: #adb9aaba;
+  --dropdowncolor: #e6e6e6;
+  --bgwhite: #f2f2f2;
+  --themegreen: #339e1bfa;
+  --bodygray: #5a5959;
+  --footergreen: #215208;
+  --disablegreen: #94cd88fa;
+  --fontfamily: sans-serif;
+  --red: #ff0000;
+}
+
+body{
+  font-family: var(--fontfamily);
+  font-size: 16px;
+}
+
+.sign-in{
+  padding-left:20px
+}
+
+input[type=submit],button{
+  cursor: pointer;
+  border: none;
+  opacity: 0.9;
+}
+
+input[type=submit]:hover,button:hover{
+  opacity: 1;
+}
+
+.outer-container{
+  width: 470px;
+  border: 2px solid var(--bodyblack);
+  border-radius: 5px;
+  box-shadow: 2px 2px var(--dropgray);
+  margin: 80px auto;
+  padding-bottom: 15px;
+}
+
+.inner-container label{
+  display: block;
+  text-align: left;
+  margin-left: 105px;
+}
+
+.form-main{
+  text-align: center;
+}
+
+.span{
+  color: var(--red);
+}
+
+.inner-container a:hover, .inner-container a:active{
+  color: var(--bodygray);
+}
+
+.inner-container a{
+  color: var(--themegreen);
+  margin-top: 10px;
+}
+
+/* ----------------------------------Input------------------------------ */
+
+input[type=password],input[type=email],input[type=text]{
+  margin-bottom: 25px;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background: var(--bgwhite);
+}
+
+input[type=password]:focus,input[type=email]:focus,input[type=text]{
+  outline: none;
+}
+
+input[type=submit]{
+  background-color: var(--themegreen);
+  color: var(--bgwhite);
+  padding: 15px 30px;
+  margin: 10px auto;
+  display: block;
+}
+
+input[id="submit"]:disabled{
+  background-color:var(--disablegreen);
+  cursor: not-allowed;
+  border:none;
+}
+
+.msg{
+  padding: 10px;
+  color: var(--red);
+}
+
+.pass-status1{
+  font-size:14px;
+}
+
+.show-pass{
+  margin-bottom:15px;
+  margin-right:136px;
+}
+
+input[id="password"]{
+  margin-bottom:6px;
+}

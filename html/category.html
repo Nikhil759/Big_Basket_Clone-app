@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Category Page">
+
+	<title>Category Page</title>  
+    <link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/category.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" 
+    href= 
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<header class="head">
+
+        <nav class="mob">
+
+            <ul class="mob-nav">
+
+                <li><a class="mob-icon"><i class="fa fa-bars" aria-label="Menu" id="menu"></i></a></li>
+                <li><a class="mob-icon" href="#locator"><i class="fa fa-map-marker" aria-label="store locator"></i></a></li>
+                <li><a class="mob-icon" href="#"><img class="mob-logo" src="../resources/mon-logo.jpg" alt="logo icon"></a></li>
+                <li><a class="mob-icon" href="../html/cart.html"><i class="fa fa-shopping-basket" aria-label="Cart"></i></a></li>
+                <li><a class="mob-icon"><i class="fa fa-user" aria-label="Logout" id="logout"></i></a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="logo">
+
+            <img src="../resources/logo.jpg" alt="website logo">
+            
+        </div>
+
+        <div class="search-bar">
+
+            <form id="search">
+
+                <input type="text" id="search" name="search" placeholder="Search Product" aria-label="search"/>
+
+                <button id="search-product" aria-label="search product">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+
+            </form>
+
+        </div>
+        
+        <div class="nav-menu">
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../html/login.html" class="nav-link partition" id="signin">Sign In</a></li>
+                <li class="nav-item"><a href="../html/register.html" class="nav-link partition" id="signup">Sign Up</a></li>
+                <li class="nav-item"><a href="#foot" class="nav-link partition">Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="logout">Logout</a></li>
+            </ul>
+
+        </div>
+
+        <a href="../html/cart.html"><div class="cart">
+            <i class="fa fa-shopping-basket" aria-label="Cart"></i>
+        </div></a> 
+
+    </header>
+
+
+    <!----------------------------------- Navigation Bar ----------------------------------->
+
+    <nav class="nav-bar">
+
+        <ul class="ul-class">
+
+            <li class="li-class">
+
+                <div class="dropdown"><a href="#">Categories</a>
+
+                    <div class="dropdown-account">
+
+                        <a href="">Fruits</a>
+                        <a href="">Vegetables</a>
+                        <a href="">Gourmet & World Food</a>
+                        <a href="">Grains</a>
+                        <a href="">Drinks</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li class="li-class">
+
+                <div class="dropdown"><a href="#">Vegetables</a>
+
+                    <div class="dropdown-account">
+
+                        <a href="">Potato, Onion & Tomato</a>
+                        <a href="">Root Vegetables</a>
+                        <a href="">Cabbage & Cauliflower</a>
+                        <a href="">Beans & Drumsticks</a>
+                        <a href="">Organic Store</a>
+                    
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li class="li-class">
+
+                <div class="dropdown"><a href="#">Fruits</a>
+
+                    <div class="dropdown-account">
+
+                        <a href="">Banana</a>
+                        <a href="">Apples</a>
+                        <a href="">Papaya</a>
+                        <a href="">Kiwi, Melon & Citrus Fruits</a>
+                        <a href="">Seasonal Fruits</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li class="li-class">
+
+                <div class="dropdown"><a href="#">Gourmet & World Food</a>
+
+                    <div class="dropdown-account">
+
+                        <a href="">Biscuits & Cookies</a>
+                        <a href="">Breakfast Cereals</a>
+                        <a href="">Ice Cream & Desserts</a>
+                        <a href="">Chocolates</a>
+                        <a href="">Dairy & Cheese</a>
+
+                    </div>    
+                
+                </div>
+
+            </li>
+
+            <li class="li-class">
+
+                <div class="dropdown"><a href="#">Grains</a>
+
+                    <div class="dropdown-account">
+
+                        <a href="">Atta, Sooji & Flours</a>
+                        <a href="">Dal & Pulses</a>
+                        <a href="">Rice & Rice Products</a>
+                        <a href="">Salt, Sugar & Jaggery</a>
+                        <a href="">Masala & Spices</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li class="li-class">
+
+                <div class="dropdown"><a href="#">Drinks</a>
+
+                    <div class="dropdown-account">
+
+                        <a href="">Energy Drinks</a>
+                        <a href="">Tea & Coffee</a>
+                        <a href="">Health Drinks</a>
+                        <a href="">Fruit Juices</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!----------------------Product Container and Side Bar------------------>
+
+    <div id="filter-button" class="filter-button">
+        <button aria-label="filter" name="filter" id="filter">Filter <i class="fa fa-filter"></i></button> 
+    </div>
+
+    <div class="container" id="container">
+        
+        <aside class="side-bar">
+
+            <form>
+
+                <div class="side-box">
+
+
+                    <h1>Brand</h1>
+
+                    <div class="brand-scroll">
+
+                        <label for="brand-chkbox1"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox1" value="Amul"/> Amul</label>
+
+                        <label for="brand-chkbox2"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox2" value="FRESHO"/> FRESHO</label>
+
+                        <label for="brand-chkbox3"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox3" value="Cadbury"/> Cadbury</label>
+
+                        <label for="brand-chkbox4"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox4" value="MDH"/> MDH</label>
+
+                        <label for="brand-chkbox5"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox5" value="Kellog's"/> Kellog's</label>
+
+                        <label for="brand-chkbox6"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox6" value="Catch"/> Catch</label>
+
+                        <label for="brand-chkbox7"><input type="checkbox" class = "filter-check" name="brand" id="brand-chkbox7" value="Tata"/> Tata</label>
+
+                    </div>
+                </div>
+
+                <div class="side-box">
+
+                    
+
+                        <h1>Seasonal</h1>
+                    
+                    
+
+                    <div class="brand-scroll">
+                    
+                        <label for="seasonal-chkboxbox1"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox1" value="Winter"/> Winter</label>
+
+                        <label for="seasonal-chkboxbox2"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox2" value="Autumn"/> Autumn</label>
+
+                        <label for="seasonal-chkboxbox3"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox3" value="Spring"/> Spring</label>
+
+                        <label for="seasonal-chkboxbox4"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox4" value="summer"/> Summer</label>
+
+                        <label for="seasonal-chkboxbox5"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox5" value="Monsoon"/> Monsoon</label>
+
+                        <label for="seasonal-chkboxbox6"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox6" value="Pooja Items"/> Pooja Items</label>
+
+                        <label for="seasonal-chkboxbox7"><input type="checkbox" class = "filter-check" name="seasonal" id="seasonal-chkboxbox7" value="Weekends"/> Weekends</label>
+
+                    </div>
+            
+                </div>
+
+                <div class="side-box">
+
+                    
+
+                        <h1>Origin</h1>
+                        
+                
+                    
+
+                
+                    <div class="brand-scroll">
+                    
+                        <label for="origin1"><input type="checkbox" class = "filter-check" name="origin" id="origin1" value="Australia"/> Australia</label>
+
+                        <label for="origin2"><input type="checkbox" class = "filter-check" name="origin" id="origin2" value="India"/> India</label>
+
+                        <label for="origin3"><input type="checkbox" class = "filter-check" name="origin" id="origin3" value="America"/> America</label>
+
+                        <label for="origin4"><input type="checkbox" class = "filter-check" name="origin" id="origin4" value="New Zealand"/> New Zealand</label>
+
+                        <label for="origin5"><input type="checkbox" class = "filter-check" name="origin" id="origin5" value="China"/> China</label>
+
+                        <label for="origin6"><input type="checkbox" class = "filter-check" name="origin" id="origin6" value="Europe"/> Europe</label>
+
+                        <label for="origin7"><input type="checkbox" class = "filter-check" name="origin" id="origin7" value="England"/> England</label>
+                    
+                    </div>
+                
+                </div>
+
+                <div class="side-box">
+                
+
+                        <h1>Discount</h1>
+                    
+
+                    <div class="brand-scroll">
+                    
+                        <label for="discount-chk1"><input type="checkbox" class = "filter-check" name="discount" id="discount-chk1" value="5% - 10%"/> 5% - 10%</label>
+
+                        <label for="discount-chk2"><input type="checkbox" class = "filter-check" name="discount" id="discount-chk2" value="10% - 20%"/> 10% - 20%</label>
+
+                        <label for="discount-chk3"><input type="checkbox" class = "filter-check" name="discount" id="discount-chk3" value="20% - 30%"/> 20% - 30%</label>
+
+                        <label for="discount-chk4"><input type="checkbox" class = "filter-check" name="discount" id="discount-chk4" value="30% - 50%"/> 30% - 50%</label>
+
+                        <label for="discount-chk5"><input type="checkbox" class = "filter-check" name="discount" id="discount-chk5" value="More than 50%"/> More than 50%</label>
+                
+                    </div>
+                
+                </div>
+
+                <div class="side-box">
+                
+                    
+
+                        <h1>Pack Size</h1>
+                
+
+                    <div class="brand-scroll">
+                    
+                        <label for="pack-chk1"><input type="checkbox" class = "filter-check" name="packSize" id="pack-chk1" value="1"/> 1 Pack</label>
+
+                        <label for="pack-chk2"><input type="checkbox" class = "filter-check" name="packSize" id="pack-chk2" value="2"/> Combo 2 Pack</label>
+
+                        <label for="pack-chk3"><input type="checkbox" class = "filter-check" name="packSize" id="pack-chk3" value="3"/> Combo 3 Pack</label>
+
+                        <label for="pack-chk4"><input type="checkbox" class = "filter-check" name="packSize" id="pack-chk4" value="4"/> Combo 4 Pack</label>
+
+                        <label for="pack-chk5"><input type="checkbox" class = "filter-check" name="packSize" id="pack-chk5" value="5"/> Combo 5+ Pack</label>
+                
+                    </div>
+            
+                </div>
+        
+            </form>
+        
+        </aside>
+
+            <!------------------------------Product view here--------------------->
+
+        <main class="product-container" id="product-container">
+            <h2 class="loading">Loading...</h2>
+            <!-- <h2 class="not-found">Oops.. no such product found.</h2> -->
+        
+        </main>
+
+    </div>
+
+    <div class = "show-products" id = "show-products">
+        <button id="uniqueButton" class="show-more">Show More Products</button>
+    </div>
+    
+    <!--Footer starts-->
+
+    <footer id="foot">
+
+        <div>
+
+            <ul>
+
+                <li><h3>Big Basket</h3></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">In News</a></li>
+                <li><a href="">Green Basket</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy policy</a></li>
+                <li><a href="">Careers at big basket</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <ul>
+
+                <li><h3>Help</h3></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">bb Wallet FAQs</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Vendor Contact</a></li>
+                <li><a href="">E-Invoice Compliance for bb</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <ul>
+
+                <li><h3>Download Our App</h3></li>
+                <li><a href="https://play.google.com/store">
+                    <img src="../resources/gpicon.png" alt="play-store"></a></li>
+                <li><a href="https://www.apple.com/in/app-store/">
+                    <img src="../resources/aicon.png" alt="apple-store"></a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <ul>
+
+                <li><h3>Get Social With Us</h3></li>
+                <li class="dis"><i class="fa fa-facebook-official" aria-label="Facebook Link"></i></li>
+                <li class="dis"><i class="fa fa-pinterest-square" aria-label="Pinterest Link"></i></li>
+                <li class="dis"><i class="fa fa-twitter-square" aria-label="Twitter Link"></i></li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="../javascript/category.mjs"></script>
+    <script type="module" src="../javascript/searchresults.mjs"></script>
+</body>
+</html>

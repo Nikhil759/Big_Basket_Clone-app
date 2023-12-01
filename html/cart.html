@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/cart.css" rel="stylesheet">
+    <link href="../css/header-footer.css" rel="stylesheet">
+    <link href='https://www.bbassets.com/monsters-inc/static/images/favicon.ico' rel='icon' type='image/x-icon'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta content="Big Basket Cart Page" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Cart Page</title>
+</head>
+
+<body>
+
+<!---------------------------------------------------header-------------------------------------------------------->
+<header class="head">
+
+    <nav class="mob">
+
+        <ul class="mob-nav">
+
+            <li><a class="mob-icon"><i class="fa fa-bars" aria-label="Menu" id="menu"></i></a></li>
+            <li><a class="mob-icon" href="#locator"><i class="fa fa-map-marker" aria-label="store locator"></i></a></li>
+            <li><a class="mob-icon" href="#"><img class="mob-logo" src="../resources/mon-logo.jpg" alt="logo icon"></a></li>
+            <li><a class="mob-icon" href="../html/cart.html"><i class="fa fa-shopping-basket" aria-label="Cart"></i></a></li>
+            <li><a class="mob-icon"><i class="fa fa-user" aria-label="Logout" id="logout"></i></a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="logo">
+
+        <img src="../resources/logo.jpg" alt="website logo">
+        
+    </div>
+
+    <div class="search-bar">
+
+        <form id="search">
+
+            <input type="text" id="search" name="search" placeholder="Search Product" aria-label="search"/>
+
+            <button id="search-product" aria-label="search product">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+
+        </form>
+
+    </div>
+    
+    <div class="nav-menu">
+
+        <ul class="nav-list">
+            <li class="nav-item"><a href="../html/login.html" class="nav-link partition" id="signin">Sign In</a></li>
+            <li class="nav-item"><a href="../html/register.html" class="nav-link partition" id="signup">Sign Up</a></li>
+            <li class="nav-item"><a href="#foot" class="nav-link partition">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="logout">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <a href="../html/cart.html"><div class="cart">
+        <i class="fa fa-shopping-basket" aria-label="Cart"></i>
+    </div></a> 
+
+</header>
+
+<!-----------------------------------------------------------Cart Label----------------------------------------------->
+
+    <div class="top">
+        <h1 class="heading_name">Cart Page</h1>
+    </div>
+
+    <div class="main-inner-container"></div>
+
+    <div class="checkout-button">
+        <button class="book-button" href="../html/bb-orderpage.html">CheckOut</button>
+    </div>
+
+
+<!-------------------------------------------------Footer------------------------------------------------>
+
+<footer id="foot">
+
+    <div>
+
+        <ul>
+
+            <li><h3>Big Basket</h3></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">In News</a></li>
+            <li><a href="">Green Basket</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Careers at big basket</a></li>
+
+        </ul>
+
+    </div>
+
+    <div>
+
+        <ul>
+
+            <li><h3>Help</h3></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">bb Wallet FAQs</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Vendor Contact</a></li>
+            <li><a href="">E-Invoice Compliance for bb</a></li>
+
+        </ul>
+
+    </div>
+
+    <div>
+
+        <ul>
+
+            <li><h3>Download Our App</h3></li>
+            <li><a href="https://play.google.com/store">
+                <img src="../resources/gpicon.png" alt="play-store"></a></li>
+            <li><a href="https://www.apple.com/in/app-store/">
+                <img src="../resources/aicon.png" alt="apple-store"></a></li>
+
+        </ul>
+
+    </div>
+
+    <div>
+
+        <ul>
+
+            <li><h3>Get Social With Us</h3></li>
+            <li class="dis"><i class="fa fa-facebook-official" aria-label="Facebook Link"></i></li>
+            <li class="dis"><i class="fa fa-pinterest-square" aria-label="Pinterest Link"></i></li>
+            <li class="dis"><i class="fa fa-twitter-square" aria-label="Twitter Link"></i></li>
+
+        </ul>
+
+    </div>
+
+</footer>
+<script type="module" src="../javascript/add-to-cart.mjs"></script>
+</body>
+
+</html>
